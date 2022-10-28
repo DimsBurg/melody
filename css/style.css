@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'),
+        url('../fons/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../fons/BebasNeueCyrillic.woff') format('woff');
+    font-display: swap;
+}
+* { 
+    box-sizing:border-box;
+}
+.body {
+    font-family: 'Roboto', sans-serif;
+
+}
+.header { 
+    background-color:#635854;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #3596F5;
+}
+.navbar { 
+    max-width: 1280px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu { 
+     margin: 0;  /* откл отступы внеш */
+    padding: 0;  /* откл отступы внунт */
+    list-style: none; /* откл точки спаиска*/
+    display: flex;
+    text-align: center;
+}
+.navbar-item { 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.navbar-link { 
+    text-decoration: none;
+    color: white
+}
+.navbar-comtacts { 
+    text-align: right;
+}
+.navbar-text { 
+    display: block;
+    color:#fff;
+    margin-bottom: 4px;
+
+}
+.navbar-phone { 
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.main { 
+    max-width: 1280px;
+    margin:auto;
+    padding-top: 54px;
+    display: flex;
+}
+.main-info { 
+    flex-grow: 1;
+    text-align: center;
+
+}
+.home-image path { 
+    opacity: 0;
+    cursor: pointer;
+}
+.home-image path:hover { 
+    opacity: 1;
+}
+.counter-group { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-botton { 
+    background-color: #fff;
+    border: none;     /* Убрали стандартную обводку кнопки */
+    cursor: pointer;
+}
+.counter-arrow-down {
+    transform: rotateX(180deg); /* Развернули стрелку вниз */
+}
+.main-title { 
+    font-family: "Bebas Neue Cyrillic",sans-serif ;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 44px;
+    color: #635854;
+}
+
